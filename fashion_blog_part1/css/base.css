@@ -1,0 +1,70 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firefox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+body {
+  color: rgb(68, 68, 68);
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter;
+}
+
+.preview {
+  background: url(../fashion_blog_part2.png);
+  background-repeat: no-repeat;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, li, blockquote {
+  padding-top: 20px;
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  font-size: 2.0m;
+}
+
+h2 {
+  font-size: 1.6m;
+}
+
+h3 {
+  font-size: 1.5m;
+  padding-bottom: 2.0m;
+}
+
+h4 {
+  font-size: 1.3m;
+  padding-bottom: 2.0m;
+}
+
+h5 {
+  font-size: 1.0m;
+  font-weight: bold;
+}
+
+h6 {
+  font-size: 0.6m;
+}
+
+
+.button {
+  color: rgb(242, 0, 43);
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.3m;
+  padding-bottom: 20px;
+}

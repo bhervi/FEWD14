@@ -1,17 +1,49 @@
 body {
   color: #020202;
-  background: rgba(203, 62, 0, 0.9);;
+  background: rgb(177, 181, 200);
+  font-family: 'Helvetica', sans-serif;
   font-size: 16px;
+  font-weight: lighter;
   line-height: 20px;
 }
 
-
-h1, h2, h3, h4, h5, h6, p, a, li, blockquote {
-  
-  font-family: 'Helvetica', sans-serif;
+header {
+  padding: 40px;
+  background-color: rgb(230, 220, 230)
 }
 
-blockquote {
-  font-style: italic;
-  font-size: 24px;
+header img {
+  border-radius: 25px;
+}
+
+section {
+  position: relative;
+  padding: 5px;
+  width: 86%;
+  float: right;
+  font-weight: lighter;
+}
+
+.navbar {
+    height: 75px;
+    overflow: auto;
+    text-align: center;
+}
+.nav {
+    display: inline;
+    font-size: 14px;
+    height: 65px;
+    margin: 15px;
+    padding: 20px;
+    position: relative;
+    text-transform: uppercase;
+    top: 35px;
+}
+
+h1 {
+  font-weight: lighter;
+}
+
+h3 {
+  font-weight: lighter;
 }

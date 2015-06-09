@@ -1,0 +1,26 @@
+body {
+  color: #020202;
+  background-color: rgb(230, 220, 230);
+  font-family: 'Helvetica', sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
+  line-height: 20px;
+}
+
+#container {
+  width: 60%;
+  top:30px;
+  position: relative;
+  left: 20%;
+}
+
+#about {
+ position:absolute;
+ top:30px;
+ right:0;
+ width:500px;
+}
+
+h3 {
+  font-weight: lighter;
+}
