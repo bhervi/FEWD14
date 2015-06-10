@@ -1,0 +1,89 @@
+body {
+  color: rgb(68,68,68);
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+}
+
+.preview {
+  background: url(../fashion_blog_part2.png);
+  background-repeat: no-repeat;
+}
+
+header {
+  padding: 55px;
+}
+
+.button {
+  color: rgb(242, 0, 43);
+  font-size: 55px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.next {
+  color: rgba(242, 0, 43, 0.9);
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+#container {
+  width: 80%;
+  height: auto;
+  position: relative;
+  left: 1%;
+}
+
+.navbar {
+    background-color: black;
+    height: 65px;
+    overflow: auto;
+    text-align: center;
+}
+.nav {
+    color: white;
+    display: inline;
+    font-family: "Lato",sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    height: 65px;
+    margin: 15px;
+    padding: 14px;
+    position: relative;
+    top: 25px;
+}
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+article {
+  position: relative;
+  padding: 20px;
+  width: 60%;
+  float: left;
+}
+
+h2 {
+  color: black;
+  font-family: "Lato",sans-serif;
+  font-size: 34px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+h3 {
+  color: rgba(204,204,204,0.9);
+  font-size: 35px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+p {
+  color: rgba(67,67,67,0.9);
+  font-size: 18px;
+  line-height: 24px;
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter;
+}
