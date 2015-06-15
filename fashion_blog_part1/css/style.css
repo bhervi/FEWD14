@@ -11,29 +11,25 @@ body {
   background-repeat: no-repeat;
 }
 
-header {
-  padding: 55px;
-}
-
-.button {
-  color: rgb(242, 0, 43);
-  font-size: 55px;
-  font-weight: 300;
-  text-decoration: none;
-}
-
-.next {
-  color: rgba(242, 0, 43, 0.9);
-  font-size: 18px;
-  font-weight: 700;
-  text-decoration: none;
-}
-
 #container {
-  width: 80%;
+  width: 90%;
   height: auto;
   position: relative;
-  left: 1%;
+  left: 35px;
+}
+
+header {
+  position:absolute;
+  top:55px;
+  left:30px;
+  width:600px;
+}
+
+aside {
+  position:absolute;
+  top:10px;
+  left:360px;
+  width:400px;
 }
 
 .navbar {
@@ -41,6 +37,10 @@ header {
     height: 65px;
     overflow: auto;
     text-align: center;
+    position:relative;
+    top:125px;
+    left:30px;
+    width:100%;
 }
 .nav {
     color: white;
@@ -59,11 +59,40 @@ header {
     text-decoration: none;
 }
 
+.button {
+  color: rgb(242, 0, 43);
+  font-size: 55px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
 article {
-  position: relative;
-  padding: 20px;
-  width: 60%;
-  float: left;
+    position: relative;
+    padding: 20px;
+    top: 500px
+
+    float: left;
+}
+
+section {
+  margin-left: 60%;
+}
+
+.boxed {
+    float: left;
+    width: 300px;
+    height: 250px;
+    border-width: 1px;
+    border-color: rgba(0,0,0,0.2);
+}
+
+.box a {
+    color: rgba(67,67,67,0.9);
+    font-size: 70px;
+    font-family: 'Lato', sans-serif;
+    margin-left: 100px;
+    margin-right: 120px;
+    padding: 100px;
 }
 
 h2 {
@@ -80,10 +109,29 @@ h3 {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
 }
+
+h4 {
+
+}
+
+h5 {
+  color: rgba(67,67,67,0.9);
+  font-size: 22px;
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter;
+}
+
 p {
   color: rgba(67,67,67,0.9);
   font-size: 18px;
   line-height: 24px;
   font-family: 'Lato', sans-serif;
   font-weight: lighter;
+}
+
+.next {
+  color: rgba(242, 0, 43, 0.9);
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
 }
