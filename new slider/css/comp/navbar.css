@@ -1,0 +1,37 @@
+#container {
+  transition: transform .5s;
+}
+
+#container.active {
+  transform: translateX(100px);
+}
+
+#sidemenu {
+  left: -100px;
+  position: absolute;
+  top: 0;
+  width: 100px;
+}
+
+#sidemenu>.toggle {
+  height: 15px;
+  position: absolute;
+  right: -35px;
+  top: 10px;
+  width: 25px;
+}
+
+.nav {
+  background-color: grey;
+  color: white;
+  height: 100%;
+  position: relative;
+}
+
+ul.nav {
+  list-style-type: none;
+}
+
+ul.nav a {
+
+}
