@@ -3,14 +3,42 @@ Element.prototype.Gallery = function(){
   var gallery = this;
   var ul = gallery.children[0];
   var photos = new Object();
+  var container = document.getElementById('container');
   // Define global variables
+
+  this.singlePhoto = function(ev){
+
+
+    var section = document.createElement('section');
+
+    section.classList.add('single-photo');
+
+    section.innerHTML = ev.target.innerHTML;
+    section.style.backgroundImage = ev.target.style.backgroundImage;
+    section.style.backgroundRepeat = 'no-repeat';
+    section.style.backgroundSize = 'contain';
+    section.style.backgroundPosition = 'center center';
+    var p = document.createElement('p');
+    p.innerHTML = ev.target.dataset.description;
+
+    var closeButton = document.createElement('div');
+    closeButton.classList.add('close');
+
+    closeButton.addEventListener('click', function(){
+      section.style.display = 'none';
+    });
+
+    section.children[0].appendChild(p);
+    section.appendChild(closeButton);
+    container.appendChild(section);
+
+  };
 
   this.layoutPhotos = function(){
       // add logic for each photo in here
 
       photos.forEach(function(photo,index){
 
-        console.log(photo);
         var li = document.createElement('li');
 
         li.style.backgroundImage = 'url("'+photo.image_url+'")';
@@ -24,18 +52,15 @@ Element.prototype.Gallery = function(){
         photo.rating+'</div></div>'+
         '</div>';
 
-        li.addEventListener(‘mousedown’ , gallery.singlePhoto);
+        li.dataset.description = photo.description;
+
+        li.addEventListener('click', gallery.singlePhoto);
 
         ul.appendChild(li);
-
 
       });
 
   };
-
-  this.singlePhoto = function(ev){
-    console.log(ev);
-};
 
   this.connect = function(){
       var xhr = new XMLHttpRequest();
@@ -63,7 +88,6 @@ Element.prototype.Gallery = function(){
 
 
   this.init(); // do tasks on initialization.
-
 
 };
 /* end Gallery */
