@@ -51,7 +51,7 @@ Element.prototype.Gallery = function(){
         '</h6></div><div class="stats"><div>'+
         photo.rating+'</div></div>'+
         '</div>';
-
+        console.log(photo);
         li.dataset.description = photo.description;
 
         li.addEventListener('click', gallery.singlePhoto);
