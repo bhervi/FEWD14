@@ -1,49 +1,27 @@
 Element.prototype.Search = function(){
-    var search = this,
-        gallery = document.getElementById('gallery');
-        gallery.getFilterList()
-// when the user focuses on the input, clear its contents
-// after the user presses 'enter/return', filter the gallery <li> using the tags from the JSON model.
+    var search = this;
+    var gallery = document.getElementById('gallery');
+    var input = this.children[0];
+      
 
-  document.getElementById('search').onkeydown = function activate(e, message)
-  {
-    if (isNotEnter(e))
-    {
-        return true;
-    }
-    else
-        if (message.length >= 1)
-        {
-            search();
-        }
-        return false;
-    }
-  console.log(onkeydown);
+    this.init = function(){
+        input.addEventListener('focus', function(){
+            this.value = '';
+        });
 
-this.connect = function(){
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET", "./models/popular-photos.json", true);
-    xhr.setRequestHeader("Content-Type", "application/json");
+        input.addEventListener('keyup', function(ev){
 
-    xhr.onreadystatechange = function() {
-      if (xhr.readyState == 4) {
-          var response = JSON.parse(xhr.responseText);
-          tags = response.tags;
-          gallery.layoutPhotos();
+            if(ev.keyCode === 13){
+              console.log(ev.keyCode)
+                var query = input.value;
+                gallery.filterPhotos(query);
 
-      }
-    }
-    xhr.send();
-  };
+            }
 
-  this.init = function() {
-    go.addEventListener('click', function(ev){
-        ev.preventDefault();
-        search.send();
-      });
+        });
 
-  };
+    };
 
-  this.init();
+    this.init();
 
 };
