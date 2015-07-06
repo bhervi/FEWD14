@@ -8,21 +8,25 @@ h1 {
   font-size: 30px;
 }
 
+.card {
+
+}
 
 .flip-container {
 	perspective: 1000;
+  margin: 10px;
 }
-	/* flip the pane when hovered */
-	.flip-container:hover .flipper, .flip-container.hover .flipper {
+
+.flip-container.active .flipper {
 		transform: rotateY(180deg);
-	}
+}
 
 .flip-container, .front, .back {
-	width: 320px;
-	height: 480px;
+  background-color: white;
+	height: 130px;
+  width: 100px;
 }
 
-/* flip speed goes here */
 .flipper {
 	transition: 0.6s;
 	transform-style: preserve-3d;
@@ -30,7 +34,6 @@ h1 {
 	position: relative;
 }
 
-/* hide back of pane during swap */
 .front, .back {
 	backface-visibility: hidden;
 
@@ -39,14 +42,38 @@ h1 {
 	left: 0;
 }
 
-/* front pane, placed above back */
 .front {
 	z-index: 2;
-	/* for firefox 31 */
 	transform: rotateY(0deg);
 }
 
-/* back, initially hidden pane */
 .back {
 	transform: rotateY(180deg);
+  overflow: hidden;
+}
+
+.back img {
+  position:absolute;
+  height: 245px;
+  width: 225px;
+}
+
+.heart .back img {
+  top: 5px;
+  left:-120px;
+}
+
+.diamond .back img {
+  top: -120px;
+  left: 5px;
+}
+
+.club .back img {
+  top: -120px;
+  left:-120px;
+}
+
+.spade .back img {
+  top: 5px;
+  left: 5px;
 }

@@ -5,6 +5,7 @@
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/matching.js"></script>
   </head>
 
 
@@ -12,7 +13,9 @@
     <div id = "container">
       <h1>Card Match</h1>
 
-      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+      <div id = "memory_board"></div>
+
+      <div class="flip-container heart" >
         <div class="flipper">
 		         <div class="front">
 			          <img src="img/bicycle-back.jpg" width="100" height="130">
@@ -21,9 +24,42 @@
       			    <img src="img/french-suits.svg" width="100" height="130">
 		         </div>
 	     </div>
+      </div>
 
+      <div class="flip-container diamond" >
+        <div class="flipper">
+             <div class="front">
+                <img src="img/bicycle-back.jpg" width="100" height="130">
+             </div>
+             <div class="back">
+                <img src="img/french-suits.svg" width="100" height="130">
+             </div>
+       </div>
+      </div>
+
+      <div class="flip-container club" >
+        <div class="flipper">
+             <div class="front">
+                <img src="img/bicycle-back.jpg" width="100" height="130">
+             </div>
+             <div class="back">
+                <img src="img/french-suits.svg" width="100" height="130">
+             </div>
+       </div>
+      </div>
+
+      <div class="flip-container spade" >
+        <div class="flipper">
+             <div class="front">
+                <img src="img/bicycle-back.jpg" width="100" height="130">
+             </div>
+             <div class="back">
+                <img src="img/french-suits.svg" width="100" height="130">
+             </div>
+       </div>
       </div>
 
     </div>
+    <script src="js/app.js"></script>
   </body>
 </html>
