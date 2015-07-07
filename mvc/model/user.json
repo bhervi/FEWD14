@@ -1,0 +1,33 @@
+{
+  "users":[{
+      "name": "Bhervi",
+      "age": "30",
+      "occupation": "PM"
+    },
+    {
+      "name": "Joe",
+      "age": "35",
+      "occupation": "Account Manager"
+    },
+    {
+      "name": "Sally",
+      "age": "28",
+      "occupation": "Copywriter"
+    },
+    {
+      "name": "Matt",
+      "age": "31",
+      "occupation": "Designer"
+    },
+    {
+      "name": "Paul",
+      "age": "33",
+      "occupation": "Developer"
+    },
+    {
+      "name": "Wendy",
+      "age": "38",
+      "occupation": "Producer"
+  }]
+
+}
