@@ -1,24 +1,26 @@
 body {
   background-color: green;
-
 }
 
 h1 {
   color: white;
   font-size: 30px;
+  text-align: center;
 }
 
-.card {
-
+#container {
+  width: 800px;
+  margin: auto;
 }
 
 .flip-container {
 	perspective: 1000;
   margin: 10px;
+  float: left;
 }
 
-.flip-container.active .flipper {
-		transform: rotateY(180deg);
+.flip-container.active .flipper, .flip-container.matched .flipper {
+	transform: rotateY(180deg);
 }
 
 .flip-container, .front, .back {
@@ -30,13 +32,11 @@ h1 {
 .flipper {
 	transition: 0.6s;
 	transform-style: preserve-3d;
-
 	position: relative;
 }
 
 .front, .back {
 	backface-visibility: hidden;
-
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -57,7 +57,6 @@ h1 {
   height: 245px;
   width: 225px;
 }
-
 .heart .back img {
   top: 5px;
   left:-120px;
